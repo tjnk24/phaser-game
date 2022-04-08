@@ -1,14 +1,6 @@
-import $ from 'jquery';
-
+import {Game} from 'phaser';
 import './scss';
-import {testFunc} from './scripts/test';
-import {foo} from './scripts/foo';
-import {test} from './scripts/bar';
 
-console.log(test);
+import {gameConfig} from './gameConfig';
 
-testFunc('ку');
-
-foo.log('test');
-
-$('#jqueryDiv').css('color', 'green');
+export const game = new Game(gameConfig);
