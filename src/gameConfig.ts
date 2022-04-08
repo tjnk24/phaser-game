@@ -5,8 +5,8 @@ export const gameConfig: Types.Core.GameConfig = {
     title: 'Sample',
     type: Phaser.AUTO,
     scale: {
-        width: window.innerWidth,
-        height: window.innerHeight,
+        width: 0,
+        height: 0,
     },
     physics: {
         default: 'arcade',
@@ -16,5 +16,5 @@ export const gameConfig: Types.Core.GameConfig = {
     },
     parent: 'game',
     backgroundColor: '#000000',
-    scene: new MainScene(),
+    scene: MainScene,
 };
